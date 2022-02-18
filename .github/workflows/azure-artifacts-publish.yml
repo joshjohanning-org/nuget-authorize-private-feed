@@ -1,0 +1,29 @@
+name: Azure Artifacts Publish
+
+on:
+  push:
+    branches:
+      - azure-artifacts
+  workflow_dispatch:
+  # all inputs default to push all - if package exists already, it'll be skipped anyway
+
+jobs:
+  nuget-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Prepare environment
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Setup nuget feed
+        run: |
+          dotnet nuget add source --username joshjohanning-org --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github https://nuget.pkg.github.com/joshjohanning-org/index.json
+      - name: Install dependencies
+        run: dotnet restore
+      
+      - name: Publish All Nuget Packages
+        run: |
+          mkdir __out
+          dotnet pack -c Release -o __out --no-restore
+          dotnet nuget push "./__out/*.nupkg" --skip-duplicate --no-symbols true --api-key ${{ secrets.AZURE_DEVOPS_TOKEN }} --source "https://pkgs.dev.azure.com/jjohanning0798/PartsUnlimited/_packaging/Wolfringo-github-packages/nuget/v3/index.json"
