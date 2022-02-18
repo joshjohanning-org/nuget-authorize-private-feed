@@ -28,4 +28,4 @@ jobs:
           dotnet nuget add source --username az --password ${{ secrets.AZURE_DEVOPS_TOKEN }} --store-password-in-clear-text --name azuredevops https://pkgs.dev.azure.com/jjohanning0798/PartsUnlimited/_packaging/Wolfringo-github-packages/nuget/v3/index.json
           mkdir __out
           dotnet pack -c Release -o __out --no-restore
-          dotnet nuget push "./__out/*.nupkg" --skip-duplicate --no-symbols true --api-key ${{ secrets.AZURE_DEVOPS_TOKEN }} --source "https://pkgs.dev.azure.com/jjohanning0798/PartsUnlimited/_packaging/Wolfringo-github-packages/nuget/v3/index.json"
+          dotnet nuget push "./__out/*.nupkg" --skip-duplicate --no-symbols true --api-key ${{ secrets.AZURE_DEVOPS_TOKEN }} --source "azuredevops"
