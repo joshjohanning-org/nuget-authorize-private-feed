@@ -16,3 +16,4 @@ updates:
       - nuget-azure-artifacts
     schedule:
       interval: "daily"
+    open-pull-requests-limit: 15
