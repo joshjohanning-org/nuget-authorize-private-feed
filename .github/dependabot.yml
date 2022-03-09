@@ -5,7 +5,7 @@
 
 version: 2
 registries:
-  nuget-azure-artifacts_edit:
+  nuget-azure-artifacts:
     type: nuget-feed
     url: https://pkgs.dev.azure.com/jjohanning0798/PartsUnlimited/_packaging/nuget-example/nuget/v3/index.json
     username: jjohanning0798
