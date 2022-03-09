@@ -8,7 +8,7 @@ registries:
   nuget-azure-artifacts:
     type: nuget-registry
     url: https://pkgs.dev.azure.com/jjohanning0798/PartsUnlimited/_packaging/nuget-example/nuget/v3/index.json
-    token: ${{ secrets.AZURE_DEVOPS_PAT }}:  # Must be an unencoded password
+    token: '${{ secrets.AZURE_DEVOPS_PAT }}:'  # Must be an unencoded password
 updates:
   - package-ecosystem: "nuget"
     directory: "/Examples/HostedCommandsBot/"
