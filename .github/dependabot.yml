@@ -8,7 +8,7 @@ registries:
   nuget-azure-artifacts:
     type: nuget-feed
     url: https://pkgs.dev.azure.com/jjohanning0798/PartsUnlimited/_packaging/nuget-example/nuget/v3/index.json
-    token: ${{ secrets.AZURE_DEVOPS_PAT }}
+    token: :${{ secrets.AZURE_DEVOPS_PAT }}
     # username: jjohanning0798
     # password: ${{ secrets.AZURE_DEVOPS_PAT }}  # Must be an unencoded password
 updates:
