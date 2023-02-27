@@ -40,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Wolfringo.Core\Wolfringo.Core.csproj" />
+    <ProjectReference Include="..\Josh.Core\Josh.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -26,10 +26,10 @@ JObject jsonPayload = ...
 await client.SendAsync("message send", jsonPayload, binaryMessages, cancellationToken).ConfigureAwait(false);
 ```
 
-See [WolfClient.cs](/Wolfringo.Core/WolfClient.cs) for a working implementation example.
+See [WolfClient.cs](/Josh.Core/WolfClient.cs) for a working implementation example.
 
 #### Events
-This SocketIO client implementation does not support logging. Instead, it'll communicate using exceptions (for errors occured in methods when invoked externally) and events. Listen to these events to determine what happened and optionally log. Default [WolfClient](/Wolfringo.Core/WolfClient.cs) implementation does this automatically using provided ILogger.
+This SocketIO client implementation does not support logging. Instead, it'll communicate using exceptions (for errors occured in methods when invoked externally) and events. Listen to these events to determine what happened and optionally log. Default [WolfClient](/Josh.Core/WolfClient.cs) implementation does this automatically using provided ILogger.
 
 `ErrorRaised` event will not be invoked for task cancellations (they're considered to be a normal disconnection), and server abruptly ending the connection (instead of raising error, the reason will be mentioned in Disconnected event).
 
