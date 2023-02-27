@@ -31,7 +31,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Wolfringo.Commands\Wolfringo.Commands.csproj" />
-    <ProjectReference Include="..\..\Wolfringo.Core\Wolfringo.Core.csproj" />
+    <ProjectReference Include="..\..\Josh.Core\Josh.Core.csproj" />
     <ProjectReference Include="..\..\Wolfringo.Hosting\Wolfringo.Hosting.csproj" />
   </ItemGroup>
 

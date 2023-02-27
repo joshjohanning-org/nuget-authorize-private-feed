@@ -5,7 +5,7 @@ uid: Guides.GettingStarted.Installation
 # Installation Guide
 Default means to install Wolfringo is through NuGet package.
 
-[Wolfringo](https://www.nuget.org/packages/Wolfringo) metapackage will automatically install [Wolfringo.Core](https://www.nuget.org/packages/Wolfringo.Core), [Wolfringo.Commands](https://www.nuget.org/packages/Wolfringo.Commands), [Wolfringo.Utilities](https://www.nuget.org/packages/Wolfringo.Utilities) and [Wolfringo.Utilities.Interactive](https://www.nuget.org/packages/Wolfringo.Utilities.Interactive).  
+[Wolfringo](https://www.nuget.org/packages/Wolfringo) metapackage will automatically install [Josh.Core](https://www.nuget.org/packages/Josh.Core), [Wolfringo.Commands](https://www.nuget.org/packages/Wolfringo.Commands), [Wolfringo.Utilities](https://www.nuget.org/packages/Wolfringo.Utilities) and [Wolfringo.Utilities.Interactive](https://www.nuget.org/packages/Wolfringo.Utilities.Interactive).  
 
 ### [Visual Studio Package Manager](#tab/install-with-vs)
 1. Manage NuGet Packages for your bot project.  

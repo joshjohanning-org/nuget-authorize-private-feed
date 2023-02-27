@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
-    <id>Wolfringo</id>
+    <id>JoshNuget</id>
     <version>1.1.2</version>
-    <title>Wolfringo</title>
+    <title>JoshNuget</title>
     <authors>TehGM</authors>
     <owners>TehGM</owners>
     <description>A .NET Library for WOLF (previously Palringo). This metapackage includes Core, Commands, Utilities and Utilities.Interactive libraries.</description>
@@ -19,7 +19,7 @@
     </releaseNotes>
     <dependencies>
       <group>
-        <dependency id="Wolfringo.Core" version="1.1.2" />
+        <dependency id="Josh.Core" version="1.1.2" />
         <dependency id="Wolfringo.Utilities" version="1.1.2" />
         <dependency id="Wolfringo.Utilities.Interactive" version="1.1.2" />
         <dependency id="Wolfringo.Commands" version="1.1.2"/>

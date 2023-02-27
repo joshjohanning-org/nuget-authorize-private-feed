@@ -8,7 +8,7 @@ Using [AddMessageListener](xref:TehGM.Wolfringo.IWolfClient#TehGM_Wolfringo_IWol
 To address this, Wolfringo has an extensible Commands System. This System is attribute-based, and supports [Dependency Injection](xref:Guides.Commands.DependencyInjection) out of the box.
 
 ## Enable Commands System in your bot
-Commands System is included in both [Wolfringo metapackage](https://www.nuget.org/packages/Wolfringo) and [Wolfringo.Hosting](https://www.nuget.org/packages/Wolfringo.Hosting). If you're not using either (for example when using [Wolfringo.Core](https://www.nuget.org/packages/Wolfringo.Core) directly), it can be installed with [Wolfringo.Commands](https://www.nuget.org/packages/Wolfringo.Commands) package. See [Installation instructions](xref:Guides.GettingStarted.Installation) for guide how to install Wolfringo components.
+Commands System is included in both [Wolfringo metapackage](https://www.nuget.org/packages/Wolfringo) and [Wolfringo.Hosting](https://www.nuget.org/packages/Wolfringo.Hosting). If you're not using either (for example when using [Josh.Core](https://www.nuget.org/packages/Josh.Core) directly), it can be installed with [Wolfringo.Commands](https://www.nuget.org/packages/Wolfringo.Commands) package. See [Installation instructions](xref:Guides.GettingStarted.Installation) for guide how to install Wolfringo components.
 
 Like with the [Bot itself](xref:Guides.GettingStarted.Connecting), enabling Commands System depends on whether you're using Wolfringo.Hosting or not.
 
