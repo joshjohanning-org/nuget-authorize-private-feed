@@ -1,0 +1,26 @@
+name: build 
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  nuget-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+          
+      - name: Setup nuget feed
+        run: |
+          dotnet nuget add source --username joshjohanning-org --password ${{ secrets.AZDO_TOKEN }} --store-password-in-clear-text --name azure_devops https://pkgs.dev.azure.com/jjohanning0798/PartsUnlimited/_packaging/nuget-example/nuget/v3/index.json
+
+      - name: Install dependencies
+        run: dotnet restore
+      
+      - name: Build
+        run: |
+          dotnet build
